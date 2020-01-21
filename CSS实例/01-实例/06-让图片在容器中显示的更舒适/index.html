@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片显示</title>
+		<style type="text/css">
+			.image {
+				background: #34495e;
+				border: 1px solid #34495e;
+				width: 200px;
+				height: 200px;
+			}
+			.image-contain {
+				object-fit: contain;
+				object-position: center;
+			}
+			.image-cover {
+				object-fit: cover;
+				object-position: right top;
+			}
+		</style>
+	</head>
+	<body>
+		<img class="image image-contain" src="index.jpg" >
+		<img class="image image-cover" src="index.jpg" >
+	</body>
+</html>

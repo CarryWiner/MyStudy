@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>不变宽高比</title>
+		<!-- 
+			给定宽度可变的元素，它将确保其高度以响应方式保持成比例（即，宽高比不变）
+		 -->
+		<style type="text/css">
+			.constant-width-to-height-ratio {
+				color: #fff;
+				background: #333;
+				width: 50%;
+			}
+			.constant-width-to-height-ratio::before {
+				content: '';
+				padding-top: 100%;
+				float: left;
+			}
+			.constant-width-to-height-ratio::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="constant-width-to-height-ratio">宽高比不变</div>
+	</body>
+</html>
