@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3边界图片</title>
+		<style type="text/css">
+			div {
+				border: 15px solid transparent;
+				width: 250px;
+				padding: 10px 20px;
+			}
+			#round {
+				border-image: url(img/border.png) 30 30 round;
+			}
+			#stretch {
+				border-image: url(img/border.png) 30 30 stretch;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			<b>注意：</b>
+			Internet Explorer 不支持border-image属性。
+		</p>
+		<p>
+			border-image属性用于设置图片的边框。
+		</p>
+		<div id="round">
+			这里，图像平铺（重复）来填充该区域。
+		</div>
+		<hr>
+		<div id="stretch">
+			这里，图像被拉伸以填充该区域。
+		</div>
+		<p>这里我们使用的图片素材：</p>
+		<img src="img/border.png" >
+	</body>
+</html>
